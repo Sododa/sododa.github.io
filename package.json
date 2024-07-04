@@ -1,18 +1,19 @@
 {
+  "homepage": "https://sododa.github.io/edupath",
   "name": "edupath",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sododa.github.io/edupath",
   "scripts": {
+    "dev": "vite",
     "start": "react-scripts start",
-    "build": "vite",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.0.2",
@@ -30,6 +31,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "gh-pages": "^6.1.1",
-    "vite": "^5.3.1"
+    "vite": "^5.3.3"
   }
 }
